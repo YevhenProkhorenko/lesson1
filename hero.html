@@ -1,0 +1,46 @@
+<section class="section">
+  <div class="container hero">
+    <div class="hero__info-wrapper">
+      <h1 class="hero__tittle">Complex preparation for English UPE</h1>
+      <p class="hero__text">
+        <span class="hero__text_main-accept">It won’t be easy.</span><br />
+        <strong
+          >But you are guaranteed to get
+          <span class="hero__text_secondary-accept">+25 points</span></strong
+        >
+      </p>
+      <!-- При 768 px текст "+25 points" не переходить на іншу строку -->
+      <button type="button" class="button">
+        <a href="#contacts" class="button__link">i want a free lesson</a>
+      </button>
+    </div>
+    <div class="hero__image-wrapper">
+      <picture class="picture">
+        <source
+          srcset="
+            /image/desktop-hero-img.png    1x,
+            /image/desktop-hero-img@2x.png 2x
+          "
+          media="(min-width: 1366px)"
+        />
+        <source
+          srcset="
+            ./image/tablet-hero-img.png   1x,
+            /image/tablet-hero-img@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /image/mobile-hero-img.png    1x,
+            /image/mobile-hero-img@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="/image/mobile-hero-img.png" alt="Teacher with student" />
+      </picture>
+    </div>
+    <div class="overlay"></div>
+    <!-- Взагалі не з'являється оверлей -->
+  </div>
+</section>

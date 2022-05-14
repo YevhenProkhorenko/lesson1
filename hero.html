@@ -1,15 +1,16 @@
 <section class="section">
-  <div class="container hero">
+  <div class="container hero overlay">
     <div class="hero__info-wrapper">
       <h1 class="hero__tittle">Complex preparation for English UPE</h1>
       <p class="hero__text">
-        <span class="hero__text_main-accept">It won’t be easy.</span><br />
+        <span class="hero__text_main--accept">It won’t be easy.</span><br />
         <strong
           >But you are guaranteed to get
-          <span class="hero__text_secondary-accept">+25 points</span></strong
+          <span class="hero__text_secondary--accept"
+            ><br />+25 points</span
+          ></strong
         >
       </p>
-      <!-- При 768 px текст "+25 points" не переходить на іншу строку -->
       <button type="button" class="button">
         <a href="#contacts" class="button__link">i want a free lesson</a>
       </button>
@@ -18,29 +19,27 @@
       <picture class="picture">
         <source
           srcset="
-            /image/desktop-hero-img.png    1x,
-            /image/desktop-hero-img@2x.png 2x
+            /images/desktop-hero-img.png    1x,
+            /images/desktop-hero-img@2x.png 2x
           "
           media="(min-width: 1366px)"
         />
         <source
           srcset="
-            ./image/tablet-hero-img.png   1x,
-            /image/tablet-hero-img@2x.png 2x
+            /images/tablet-hero-img.png    1x,
+            /images/tablet-hero-img@2x.png 2x
           "
           media="(min-width: 768px)"
         />
         <source
           srcset="
-            /image/mobile-hero-img.png    1x,
-            /image/mobile-hero-img@2x.png 2x
+            /images/mobile-hero-img.png    1x,
+            /images/mobile-hero-img@2x.png 2x
           "
           media="(max-width: 767px)"
         />
-        <img src="/image/mobile-hero-img.png" alt="Teacher with student" />
+        <img src="/images/mobile-hero-img.png" alt="Teacher with student" />
       </picture>
     </div>
-    <div class="overlay"></div>
-    <!-- Взагалі не з'являється оверлей -->
   </div>
 </section>

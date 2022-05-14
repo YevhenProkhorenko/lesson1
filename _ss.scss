@@ -1,20 +1,30 @@
 .hero {
-    position: relative;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        max-width: 480px;
+        padding-bottom: 110px;
+    }
+
+    @media screen and (max-width: 479px) {
+        padding-bottom: 25%;
+
+    }
 
     @media screen and (min-width: 768px) {
         width: 768px;
         display: flex;
+        padding-bottom: 60px;
     }
 
-    @media screen and (min-width: 1366px) {
-        width: 1366px;
+    @media screen and (min-width: 1680px) {
+        width: 1680px;
         justify-content: space-between;
-        ;
     }
 }
 
 .hero__info-wrapper {
     @media screen and (max-width: 767px) {
+
         margin-bottom: 40px;
     }
 
@@ -22,7 +32,13 @@
         max-width: 479px;
     }
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+        width: 332px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        width: 560px;
+    }
 
 }
 
@@ -46,13 +62,14 @@
         font-size: 26px;
     }
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1680px) {
         width: 560px;
         font-size: 58px;
     }
 }
 
 .hero__text {
+    font-family: inherit;
     margin-bottom: 40px;
     font-weight: 500;
     font-size: 14px;
@@ -67,7 +84,7 @@
         margin-bottom: 48px;
     }
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1680px) {
         font-size: 20px;
         line-height: 164.9%;
     }
@@ -77,8 +94,17 @@
     color: var(--secondary-text-color);
 }
 
-.hero__text_secondary-accept {
-    color: var(--brand-color);
+.hero__text_secondary--accept {
+
+    @media screen and (max-width: 1679px) {
+        color: var(--brand-color);
+    }
+
+    @media screen and (min-width: 1680px) {
+        br {
+            display: none;
+        }
+    }
 }
 
 .button {
@@ -98,6 +124,11 @@
     @media screen and (min-width: 768px) {
         width: 260px
     }
+
+    @media screen and (min-width: 1680px) {
+        padding: 26px 70px;
+        width: 354px;
+    }
 }
 
 .button__link {
@@ -109,20 +140,66 @@
     justify-content: center;
 
     @media screen and (max-width: 767px) {
-        padding-bottom: 60px;
+        max-width: 480px;
     }
 
 }
 
 .picture {
+    z-index: 99;
+
     @media screen and (min-width: 768px) {
         width: 375px;
         height: 320px;
+
     }
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1680px) {
         width: 841px;
         height: 718px;
+    }
+}
+
+.overlay {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 0px bottom -40px;
+
+    @media screen and (max-width: 767px) {
+
+        background-image: url('/images/mobile-hero-bg.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('/images/mobile-hero-bg@2x.jpg');
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        background-position: left 0px bottom -30px;
+
+        background-image: url('/images/tablet-hero-bg.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('/images/tablet-hero-bg@2x.jpg');
+        }
+    }
+
+    @media screen and (min-width: 1680px) {
+        background-position: left 0px bottom 0px;
+
+
+        background-image: url('/images/desktop-hero-bg.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('/images/desktop-hero-bg@2x.jpg');
+        }
     }
 }
 
@@ -135,7 +212,7 @@
 //     background-size: cover;
 //     background-repeat: no-repeat;
 //     background-position: center;    
-//     background-image: url('/image/bitch.jpg');
+//     background-image: url('/image/');
 //     background: #FFFFFF;
 //     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 //     // @media screen and(max-width:767px) {
@@ -147,24 +224,24 @@
 //     //         }
 //     // }    
 // }
-.overlay {
-    position: absolute;
-    width: 480px;
-    height: 100px;
-    bottom: 10px;
-    left: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('/image/bitch.jpg');
-    background-color: #E5E5E5;
-    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-    // @media screen and(max-width:767px) {
-    //     background-image: url('/image/Vector.jpg');
-    //     @media (min-device-pixel-ratio: 2),
-    //         (min-resolution: 192dpi),
-    //         (min-resolution: 2dppx) {                
-    //             background-image: url('/image/mobile-hero-bg@2x.jpg');                
-    //         }
-    // }    
-}
+// .overlay {
+//     position: absolute;
+//     width: 480px;
+//     height: 100px;
+//     bottom: 10px;
+//     left: 0;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-image: url('/images/bg.jpg');
+//     background-color: tomato;
+//     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+//     // @media screen and(max-width:767px) {
+//     //     background-image: url('/image/Vector.jpg');
+//     //     @media (min-device-pixel-ratio: 2),
+//     //         (min-resolution: 192dpi),
+//     //         (min-resolution: 2dppx) {                r
+//     //             background-image: url('/image/mobile-hero-bg@2x.jpg');                
+//     //         }
+//     // }    
+// }

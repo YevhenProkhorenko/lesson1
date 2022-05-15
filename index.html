@@ -6,5 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <section class="section">
+      <div class="container hero overlay">
+        <div class="hero__info-wrapper">
+          <h1 class="hero__tittle">Complex preparation for English UPE</h1>
+          <p class="hero__text">
+            <span class="hero__text_main--accept">It won’t be easy.</span><br />
+            <strong
+              >But you are guaranteed to get
+              <span class="hero__text_secondary--accept"
+                ><br />+25 points</span
+              ></strong
+            >
+          </p>
+          <button type="button" class="button">
+            <a href="#contacts" class="button__link">i want a free lesson</a>
+          </button>
+        </div>
+        <div class="hero__image-wrapper">
+          <picture class="picture">
+            <source
+              srcset="
+                /images/desktop-hero-img.png    1x,
+                /images/desktop-hero-img@2x.png 2x
+              "
+              media="(min-width: 1366px)"
+            />
+            <source
+              srcset="
+                /images/tablet-hero-img.png    1x,
+                /images/tablet-hero-img@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                /images/mobile-hero-img.png    1x,
+                /images/mobile-hero-img@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img src="/images/mobile-hero-img.png" alt="Teacher with student" />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="section advantages">
+      <div class="container">
+        <h2 class="visually-hidden">Advantages of Hellish english school</h2>
+        <ul class="advantages-list">
+          <li class="advantages-list__item human-icon">
+            Adapted author's UPE program
+          </li>
+          <li class="advantages-list__item cap-icon">
+            Modern teaching methods
+          </li>
+          <li class="advantages-list__item umbrella-icon">
+            Financial guarantee the result
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
 </html>

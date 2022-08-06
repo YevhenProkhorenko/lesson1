@@ -1,4 +1,72 @@
-.hero {
+:root {
+    --brand-color: #FF6B09;
+    --primary-text-color: #111518;
+    --secondary-text-color: #B9B9B9;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --background-color: #111518;
+    --secondary-background-color: #F1F1F1;
+}
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+    font-family: Montserrat, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hero {
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
         max-width: 480px;
@@ -201,7 +269,7 @@
             background-image: url('/images/desktop-hero-bg@2x.jpg');
         }
     }
-}
+} */
 
 /* // .overlay{
 //     position: absolute;
